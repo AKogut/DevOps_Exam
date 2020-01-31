@@ -12,10 +12,10 @@
 
                         <!-- Logging configuration for Confluence is specified in confluence/WEB-INF/classes/log4j.properties -->
                 <Resource name="jdbc/confluence" auth="Container" type="javax.sql.DataSource"
-                            username="Vladislav"
-                            password="1"
+                            username="andrii"
+                            password="root"
                             driverClassName="com.mysql.cj.jdbc.Driver"
-                            url="jdbc:mysql://192.168.11.20:3306/db?useUnicode=true&amp;characterEncoding=utf8"
+                            url="jdbc:mysql://192.168.40.20:3306/db?useUnicode=true&amp;characterEncoding=utf8"
                             maxTotal="60"
                             maxIdle="20"
                             defaultTransactionIsolation="READ_COMMITTED"

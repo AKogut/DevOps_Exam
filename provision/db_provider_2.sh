@@ -26,7 +26,7 @@ services:
       MYSQL_ROOT_PASSWORD: 'root'
       MYSQL_DATABASE: 'db'
       MYSQL_USER: 'andrii'
-      MYSQL_PASSWORD: '4334'
+      MYSQL_PASSWORD: 'root'
       LOG_FILE: \"/var/logs/mysql.log\"
     ports:
       - '3306:3306'

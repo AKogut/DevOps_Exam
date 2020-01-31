@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "app" do |app|
     app.vm.box = "ubuntu/bionic64"
     app.vm.network "forwarded_port", guest: 26112, host: 26110  
-    app.vm.network "private_network", ip: "192.168.40.30"
+    app.vm.network "private_network", ip: "192.168.30.20"
     app.vm.provider :virtualbox do |v|
       v.customize ["modifyvm", :id, "--natdnshostresolver2", "on"]
       v.customize ["modifyvm", :id, "--memory", 4096]
@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
     proxy.vm.network "public_network"
     proxy.vm.network "forwarded_port", guest: 80, host: 8080
     proxy.vm.network "forwarded_port", guest: 443, host: 8888
-    proxy.vm.network "private_network", ip: "192.168.40.10"
+    proxy.vm.network "private_network", ip: "192.168.50.20"
     proxy.vm.provider :virtualbox do |v|
       v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
       v.customize ["modifyvm", :id, "--memory", 1024]

@@ -63,7 +63,7 @@ http {
         ssl_ciphers HIGH:!aNULL:!MD5;
 
         location / {
-        proxy_pass http://192.168.10.31:26112;
+        proxy_pass http://192.168.50.20:26112;
     }
 
         error_page 404 /404.html;
